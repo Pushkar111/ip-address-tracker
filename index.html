@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:regular,500,700" rel="stylesheet" />
+
+
+    <!-- Leaflet CSS Cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Leaflet JS Cdn -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CUSTOM JS -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1>IP Address Tracker</h1>
+                <div class="ip-container">
+                    <input type="text" name="ip" id="ip" placeholder="Search for any IP address or domain">
+                    <button type="submit" class="arrow-btn" title="Submit">
+                        <img src="images/icon-arrow.svg" alt="Submit">
+                    </button>
+                </div>
+            </header>
+            <section class="ip-details">
+                <div>
+                    <p class="in-title">IP ADDRESS</p>
+                    <p class="in-value">192.212.174.101</p>
+                </div>
+                <div>
+                    <p class="in-title">LOCATION</p>
+                    <p class="in-value">Brooklyn, NY 10001</p>
+                </div>
+                <div>
+                    <p class="in-title">TIMEZONE</p>
+                    <p class="in-value">UTC -05:00</p>
+                </div>
+                <div>
+                    <p class="in-title">ISP</p>
+                    <p class="in-value in-isp">SpaceX Starlink</p>
+                </div>
+            </section>
+
+            <div id="map"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
